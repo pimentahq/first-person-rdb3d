@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://doee2xfu41qk1"]
+
+[ext_resource type="Script" path="res://entities/interactables/scripts/jumper.gd" id="1_eyaw0"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_7ols1"]
+radius = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onwt3"]
+albedo_color = Color(1, 0, 0.0156863, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ygldy"]
+top_radius = 0.8
+bottom_radius = 1.0
+height = 0.2
+
+[node name="Jumper" type="Area3D"]
+script = ExtResource( "1_eyaw0" )
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource( "SphereShape3D_7ols1" )
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+material_override = SubResource( "StandardMaterial3D_onwt3" )
+mesh = SubResource( "CylinderMesh_ygldy" )

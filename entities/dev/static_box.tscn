@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://entities/dev/textures/static_body_texture.png" id="1_g0i7m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dm8n0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_buj3x"]
+albedo_texture = ExtResource( "1_g0i7m" )
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_1m6yf"]
+
+[node name="StaticBox" type="StaticBody3D"]
+transform = Transform3D(1, 0, 7.45058e-09, -7.45058e-09, 1, 2.98023e-08, 1.49012e-08, 2.98023e-08, 1, 0, 0, -4.76837e-07)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource( "BoxShape3D_dm8n0" )
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 2.22045e-16, -7.45058e-09, 7.45058e-09, 1, -2.98023e-08, -1.49012e-08, -2.98023e-08, 1, -3.55271e-15, -1.42109e-14, 4.76837e-07)
+material_override = SubResource( "StandardMaterial3D_buj3x" )
+mesh = SubResource( "BoxMesh_1m6yf" )
+skeleton = NodePath("../..")

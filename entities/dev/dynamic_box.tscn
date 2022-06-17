@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0vo1sxptf7n0"]
+
+[ext_resource type="Texture2D" uid="uid://dnneox8h8sk5p" path="res://entities/dev/textures/dynamic_body_texture.png" id="1_emjfm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rl6qj"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ck6m"]
+albedo_texture = ExtResource( "1_emjfm" )
+uv1_scale = Vector3(2, 2, 2)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_8fddn"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="DynamicBox" type="RigidDynamicBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource( "BoxShape3D_rl6qj" )
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+material_override = SubResource( "StandardMaterial3D_5ck6m" )
+mesh = SubResource( "BoxMesh_8fddn" )

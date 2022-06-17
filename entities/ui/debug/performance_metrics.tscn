@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://entities/ui/debug/scripts/performance_metrics.gd" id="1_xxt1f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ost4e"]
+bg_color = Color(0, 0, 0, 0.627451)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+expand_margin_left = 8.0
+expand_margin_top = 8.0
+expand_margin_right = 8.0
+expand_margin_bottom = 8.0
+
+[node name="PerformanceMetrics" type="PanelContainer"]
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 162.0
+offset_bottom = 96.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource( "StyleBoxFlat_ost4e" )
+script = ExtResource( "1_xxt1f" )
+
+[node name="OutputLabel" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 147.0
+offset_bottom = 81.0
+theme_override_constants/line_spacing = 0
+theme_override_font_sizes/font_size = 14
+text = "FPS: 000.00
+Draw calls: 000
+Process: 00.000ms
+Physics: 00.000ms"

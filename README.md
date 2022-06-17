@@ -1,5 +1,5 @@
 # First Person - RigidDynamicBody3D
-Hello, this is a simple First Person template using RigidDynamicBody3D that I made for personal, feel free to use.
+Hello, this is a simple First Person template using RigidDynamicBody3D, feel free to use.
 
 ## Info
  - [Showcase Video - Youtube](https://www.youtube.com/watch?v=hHPdKHMBIc4)

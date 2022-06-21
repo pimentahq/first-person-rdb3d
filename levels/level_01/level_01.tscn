@@ -1,6 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://b7lmh2cxbhdmv"]
+[gd_scene load_steps=13 format=3]
 
-[ext_resource type="PackedScene" path="res://entities/ui/debug/performance_metrics.tscn" id="1_ea1h1"]
+[ext_resource type="PackedScene" path="res://ui/debug/performance_metrics.tscn" id="1_ea1h1"]
 [ext_resource type="PackedScene" uid="uid://bch4ehpxjajxa" path="res://entities/player/player.tscn" id="1_xy66x"]
 [ext_resource type="Texture2D" uid="uid://bibrxrwdsatiw" path="res://entities/dev/textures/white_floor.png" id="2_4fpff"]
 [ext_resource type="PackedScene" path="res://entities/dev/static_box.tscn" id="3_aj78s"]

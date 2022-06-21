@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[ext_resource type="Script" path="res://entities/ui/debug/scripts/performance_metrics.gd" id="1_xxt1f"]
+[ext_resource type="Script" path="res://ui/debug/scripts/performance_metrics.gd" id="1_xxt1f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ost4e"]
 bg_color = Color(0, 0, 0, 0.627451)

@@ -5,7 +5,6 @@ extends RigidDynamicBody3D
 @export var number_jumps := 2
 @export var mouse_sensitivity := 0.001
 
-@onready var _camera_pivot: Position3D = $CameraPivot
 @onready var _ground_ray_cast: RayCast3D = $GroundRayCast3D
 
 var _current_jump := 0
@@ -21,12 +20,6 @@ func _physics_process(delta: float) -> void:
 		
 func _integrate_forces(state: PhysicsDirectBodyState3D) -> void:
 	character_movement(state)
-
-func _input(event: InputEvent) -> void:
-	mouse_movement(event)
-	
-	if Input.is_action_just_pressed("a_toggle_mouse_lock"):
-		toggle_mouse_lock()
 
 
 
@@ -62,17 +55,3 @@ func air_time(delta: float) -> void:
 		_air_time += delta
 	else:
 		_air_time = 0.0
-
-func mouse_movement(event: InputEvent) -> void:
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		_camera_pivot.rotation.x -= event.relative.y * mouse_sensitivity
-		_camera_pivot.rotation.x = clamp(_camera_pivot.rotation.x, deg2rad(-80), deg2rad(80))
-
-		self.rotation.y -= event.relative.x * mouse_sensitivity
-		self.rotation.y = wrapf(self.rotation.y, 0, deg2rad(360))
-
-func toggle_mouse_lock() -> void:
-	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	else:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

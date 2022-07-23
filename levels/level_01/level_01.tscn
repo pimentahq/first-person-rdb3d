@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3]
+[gd_scene load_steps=13 format=3 uid="uid://bkcptvdc1ovpq"]
 
 [ext_resource type="PackedScene" path="res://ui/debug/performance_metrics.tscn" id="1_ea1h1"]
 [ext_resource type="PackedScene" uid="uid://bch4ehpxjajxa" path="res://entities/player/player.tscn" id="1_xy66x"]
@@ -10,14 +10,14 @@
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0bkm3"]
 
 [sub_resource type="Sky" id="Sky_l1ht3"]
-sky_material = SubResource( "ProceduralSkyMaterial_0bkm3" )
+sky_material = SubResource("ProceduralSkyMaterial_0bkm3")
 
 [sub_resource type="Environment" id="Environment_f0b4c"]
 background_mode = 2
-sky = SubResource( "Sky_l1ht3" )
+sky = SubResource("Sky_l1ht3")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1enw2"]
-albedo_texture = ExtResource( "2_4fpff" )
+albedo_texture = ExtResource("2_4fpff")
 uv1_scale = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
 
@@ -29,10 +29,10 @@ size = Vector3(30, 0.5, 30)
 
 [node name="Level01" type="Node3D"]
 
-[node name="PerformanceMetrics" parent="." instance=ExtResource( "1_ea1h1" )]
+[node name="PerformanceMetrics" parent="." instance=ExtResource("1_ea1h1")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( "Environment_f0b4c" )
+environment = SubResource("Environment_f0b4c")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.965926, -0.224144, 0.129409, -0.058688, 0.297293, 0.952981, -0.252077, -0.928104, 0.274008, 0, 16, 0)
@@ -40,91 +40,91 @@ shadow_enabled = true
 
 [node name="Map" type="Node3D" parent="."]
 
-[node name="Player" parent="Map" instance=ExtResource( "1_xy66x" )]
+[node name="Player" parent="Map" instance=ExtResource("1_xy66x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
 
 [node name="Floor" type="MeshInstance3D" parent="Map"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
-material_override = SubResource( "StandardMaterial3D_1enw2" )
-mesh = SubResource( "BoxMesh_ch2qo" )
+material_override = SubResource("StandardMaterial3D_1enw2")
+mesh = SubResource("BoxMesh_ch2qo")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Map/Floor"]
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Map/Floor/StaticBody3D"]
-shape = SubResource( "BoxShape3D_xwfat" )
+shape = SubResource("BoxShape3D_xwfat")
 
-[node name="StaticBox" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(1, 0, 7.45058e-09, -7.45058e-09, 1, 2.98023e-08, 1.49012e-08, 2.98023e-08, 1, 0, 0.5, -6)
 
-[node name="StaticBox2" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox2" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(1, 0, 7.45058e-09, -7.45058e-09, 1, 2.98023e-08, 1.49012e-08, 2.98023e-08, 1, -9.04089, 0.5, 7.93903)
 
-[node name="StaticBox3" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox3" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(1, 0, 7.45058e-09, -7.45058e-09, 1, 2.98023e-08, 1.49012e-08, 2.98023e-08, 1, -9.04089, 1.5, 5.55572)
 
-[node name="StaticBox4" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox4" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(1, 0, 7.45058e-09, -7.45058e-09, 1, 2.98023e-08, 1.49012e-08, 2.98023e-08, 1, -9.04089, 2.53905, 3.30376)
 
-[node name="StaticBox5" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox5" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(8, 1.71363e-09, -1.49012e-07, -5.96046e-08, 0.23, -2.98023e-07, 1.1921e-07, 6.85453e-09, 10, -9.14832, 3.35051, -4.73666)
 
-[node name="StaticBox6" parent="Map" instance=ExtResource( "3_aj78s" )]
+[node name="StaticBox6" parent="Map" instance=ExtResource("3_aj78s")]
 transform = Transform3D(4.73869, 7.3874e-08, -7.06121e-08, -3.5306e-08, 9.91521, -1.41224e-07, 7.06121e-08, 2.95496e-07, 4.73869, 11.3903, 4.9576, 5.17831)
 
-[node name="DynamicBox" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25, -6.20402)
 
-[node name="DynamicBox2" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox2" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.17216, 0.25, -5.8886)
 
-[node name="DynamicBox3" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox3" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70139, 0.25, -5.8886)
 
-[node name="DynamicBox4" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox4" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2251, 0.25, -5.8886)
 
-[node name="DynamicBox5" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox5" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.76177, 0.25, -5.8886)
 
-[node name="DynamicBox6" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox6" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.28539, 0.25, -5.8886)
 
-[node name="DynamicBox7" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox7" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.80552, 0.25, -5.8886)
 
-[node name="DynamicBox8" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox8" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.70139, 0.75, -5.8886)
 
-[node name="DynamicBox9" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox9" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2251, 0.75, -5.8886)
 
-[node name="DynamicBox10" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox10" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.76177, 0.75, -5.8886)
 
-[node name="DynamicBox11" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox11" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.28539, 0.75, -5.8886)
 
-[node name="DynamicBox12" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox12" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.2251, 1.25, -5.8886)
 
-[node name="DynamicBox13" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox13" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.76177, 1.25, -5.8886)
 
-[node name="DynamicBox14" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox14" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.49662, 1.75, -5.8886)
 
-[node name="DynamicBox15" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox15" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81553, 0.25, 4.77523)
 
-[node name="DynamicBox16" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox16" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81553, 0.75, 4.77523)
 
-[node name="DynamicBox17" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox17" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81553, 0.25, 5.66155)
 
-[node name="DynamicBox18" parent="Map" instance=ExtResource( "4_plm5j" )]
+[node name="DynamicBox18" parent="Map" instance=ExtResource("4_plm5j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.81553, 0.75, 5.66155)
 
-[node name="Jumper" parent="Map" instance=ExtResource( "5_5wx2n" )]
+[node name="Jumper" parent="Map" instance=ExtResource("5_5wx2n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78658, 0, 5.06308)

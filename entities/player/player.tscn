@@ -12,20 +12,22 @@ height = 1.7
 
 [node name="Player" type="RigidDynamicBody3D"]
 input_ray_pickable = false
-physics_material_override = SubResource( "PhysicsMaterial_ok6ks" )
+physics_material_override = SubResource("PhysicsMaterial_ok6ks")
 continuous_cd = true
 lock_rotation = true
-script = ExtResource( "1_wqond" )
+script = ExtResource("1_wqond")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.85, 0)
-shape = SubResource( "CapsuleShape3D_vee4a" )
+shape = SubResource("CapsuleShape3D_vee4a")
 
 [node name="CameraPivot" type="Position3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
-script = ExtResource( "2_6cr3v" )
+script = ExtResource("2_6cr3v")
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+[node name="VerticalAxis" type="Node3D" parent="CameraPivot"]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/VerticalAxis"]
 current = true
 
 [node name="GroundRayCast3D" type="RayCast3D" parent="."]

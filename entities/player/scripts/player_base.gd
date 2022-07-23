@@ -5,6 +5,7 @@ extends RigidDynamicBody3D
 @export var number_jumps := 2
 @export var mouse_sensitivity := 0.001
 
+@onready var _camera_pivot: Node3D = $CameraPivot
 @onready var _ground_ray_cast: RayCast3D = $GroundRayCast3D
 
 var _current_jump := 0
@@ -41,7 +42,7 @@ func character_movement(state: PhysicsDirectBodyState3D) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
 	var input_dir = Input.get_vector("a_left", "a_right", "a_up", "a_down")
-	var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	var direction = (_camera_pivot.global_transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
 	if direction:
 		state.linear_velocity.x = direction.x * speed

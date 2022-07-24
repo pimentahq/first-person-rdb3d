@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FirstPersonRigidDynamicBody3D"
-run/main_scene="res://levels/level_01/level_01.tscn"
+run/main_scene="res://levels/dev_island.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 config/icon="res://icon.png"
 

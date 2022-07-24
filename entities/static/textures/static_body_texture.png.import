@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bibrxrwdsatiw"
-path.s3tc="res://.godot/imported/white_floor.png-d60a180b66d11e5109f576ce48dedecc.s3tc.ctex"
-path.etc2="res://.godot/imported/white_floor.png-d60a180b66d11e5109f576ce48dedecc.etc2.ctex"
+uid="uid://fheihejebtac"
+path.s3tc="res://.godot/imported/static_body_texture.png-3f18f8eea52de26ded95b42c4e19eeb9.s3tc.ctex"
+path.etc2="res://.godot/imported/static_body_texture.png-3f18f8eea52de26ded95b42c4e19eeb9.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://entities/dev/textures/white_floor.png"
-dest_files=["res://.godot/imported/white_floor.png-d60a180b66d11e5109f576ce48dedecc.s3tc.ctex", "res://.godot/imported/white_floor.png-d60a180b66d11e5109f576ce48dedecc.etc2.ctex"]
+source_file="res://entities/static/textures/static_body_texture.png"
+dest_files=["res://.godot/imported/static_body_texture.png-3f18f8eea52de26ded95b42c4e19eeb9.s3tc.ctex", "res://.godot/imported/static_body_texture.png-3f18f8eea52de26ded95b42c4e19eeb9.etc2.ctex"]
 
 [params]
 

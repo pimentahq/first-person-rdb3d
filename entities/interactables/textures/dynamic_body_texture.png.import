@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fheihejebtac"
-path.s3tc="res://.godot/imported/static_body_texture.png-72a92112a0150a1896ba794647a4ac98.s3tc.ctex"
-path.etc2="res://.godot/imported/static_body_texture.png-72a92112a0150a1896ba794647a4ac98.etc2.ctex"
+uid="uid://dnneox8h8sk5p"
+path.s3tc="res://.godot/imported/dynamic_body_texture.png-8a27d3575e7cb3f54a6f2edd885208cd.s3tc.ctex"
+path.etc2="res://.godot/imported/dynamic_body_texture.png-8a27d3575e7cb3f54a6f2edd885208cd.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://entities/dev/textures/static_body_texture.png"
-dest_files=["res://.godot/imported/static_body_texture.png-72a92112a0150a1896ba794647a4ac98.s3tc.ctex", "res://.godot/imported/static_body_texture.png-72a92112a0150a1896ba794647a4ac98.etc2.ctex"]
+source_file="res://entities/interactables/textures/dynamic_body_texture.png"
+dest_files=["res://.godot/imported/dynamic_body_texture.png-8a27d3575e7cb3f54a6f2edd885208cd.s3tc.ctex", "res://.godot/imported/dynamic_body_texture.png-8a27d3575e7cb3f54a6f2edd885208cd.etc2.ctex"]
 
 [params]
 

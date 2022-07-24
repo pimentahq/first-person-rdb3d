@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://bkcptvdc1ovpq"]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="PackedScene" path="res://ui/debug/performance_metrics.tscn" id="1_ea1h1"]
 [ext_resource type="PackedScene" uid="uid://bch4ehpxjajxa" path="res://entities/player/player.tscn" id="1_xy66x"]
-[ext_resource type="Texture2D" uid="uid://bibrxrwdsatiw" path="res://entities/dev/textures/white_floor.png" id="2_4fpff"]
-[ext_resource type="PackedScene" path="res://entities/dev/static_box.tscn" id="3_aj78s"]
-[ext_resource type="PackedScene" uid="uid://d0vo1sxptf7n0" path="res://entities/dev/dynamic_box.tscn" id="4_plm5j"]
+[ext_resource type="Texture2D" uid="uid://bibrxrwdsatiw" path="res://levels/textures/white_floor.png" id="2_4fpff"]
+[ext_resource type="PackedScene" path="res://entities/static/static_box.tscn" id="3_aj78s"]
+[ext_resource type="PackedScene" path="res://entities/interactables/dynamic_box.tscn" id="4_plm5j"]
 [ext_resource type="PackedScene" uid="uid://doee2xfu41qk1" path="res://entities/interactables/jumper.tscn" id="5_5wx2n"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0bkm3"]
@@ -27,7 +27,7 @@ size = Vector3(30, 0.5, 30)
 [sub_resource type="BoxShape3D" id="BoxShape3D_xwfat"]
 size = Vector3(30, 0.5, 30)
 
-[node name="Level01" type="Node3D"]
+[node name="DevIsland" type="Node3D"]
 
 [node name="PerformanceMetrics" parent="." instance=ExtResource("1_ea1h1")]
 

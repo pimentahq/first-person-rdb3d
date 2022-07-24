@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3]
 
-[ext_resource type="Texture2D" path="res://entities/dev/textures/static_body_texture.png" id="1_g0i7m"]
+[ext_resource type="Texture2D" path="res://entities/static/textures/static_body_texture.png" id="1_g0i7m"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dm8n0"]
 

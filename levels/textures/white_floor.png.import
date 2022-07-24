@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnneox8h8sk5p"
-path.s3tc="res://.godot/imported/dynamic_body_texture.png-0ecc1632f086473e0b3502b71e67449f.s3tc.ctex"
-path.etc2="res://.godot/imported/dynamic_body_texture.png-0ecc1632f086473e0b3502b71e67449f.etc2.ctex"
+uid="uid://bibrxrwdsatiw"
+path.s3tc="res://.godot/imported/white_floor.png-c254a86b7068b6de9d3d56fbb973ab15.s3tc.ctex"
+path.etc2="res://.godot/imported/white_floor.png-c254a86b7068b6de9d3d56fbb973ab15.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc", "etc2"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://entities/dev/textures/dynamic_body_texture.png"
-dest_files=["res://.godot/imported/dynamic_body_texture.png-0ecc1632f086473e0b3502b71e67449f.s3tc.ctex", "res://.godot/imported/dynamic_body_texture.png-0ecc1632f086473e0b3502b71e67449f.etc2.ctex"]
+source_file="res://levels/textures/white_floor.png"
+dest_files=["res://.godot/imported/white_floor.png-c254a86b7068b6de9d3d56fbb973ab15.s3tc.ctex", "res://.godot/imported/white_floor.png-c254a86b7068b6de9d3d56fbb973ab15.etc2.ctex"]
 
 [params]
 

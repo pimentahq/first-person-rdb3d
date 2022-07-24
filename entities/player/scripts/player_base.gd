@@ -11,7 +11,6 @@ extends RigidDynamicBody3D
 
 var _current_jump := 0
 var _air_time := 0.0
-var _event_relative_x = 0.0
 var is_jumping := false
 
 

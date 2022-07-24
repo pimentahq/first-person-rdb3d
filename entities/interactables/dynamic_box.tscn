@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0vo1sxptf7n0"]
+[gd_scene load_steps=5 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dnneox8h8sk5p" path="res://entities/dev/textures/dynamic_body_texture.png" id="1_emjfm"]
+[ext_resource type="Texture2D" path="res://entities/interactables/textures/dynamic_body_texture.png" id="1_emjfm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rl6qj"]
 size = Vector3(0.5, 0.5, 0.5)

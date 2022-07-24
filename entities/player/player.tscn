@@ -25,9 +25,7 @@ shape = SubResource("CapsuleShape3D_vee4a")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
 script = ExtResource("2_6cr3v")
 
-[node name="VerticalAxis" type="Node3D" parent="CameraPivot"]
-
-[node name="Camera3D" type="Camera3D" parent="CameraPivot/VerticalAxis"]
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 current = true
 
 [node name="GroundRayCast3D" type="RayCast3D" parent="."]

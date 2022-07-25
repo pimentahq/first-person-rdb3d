@@ -7,3 +7,6 @@ Hello, this is a simple first person template using RigidDynamicBody3D (RigidBod
  - Uses RigidDynamicBody3D over CharacterBody3D to interact better with other physics bodies.
  - MIT License
  - Maybe one day I will place comments over the code 😋
+
+## Donate ❤
+- https://ko-fi.com/pimentahq
